@@ -53,7 +53,7 @@ function changeUnicorn() {
   stateIndex++;
 }
 
-var songState = ["2.mp3", "1.mp3"];
+var songState = ["2.mp3", ""];
 var songIndex = 0;
 function changeMusic() {
   var song = document.getElementById("audio");
@@ -62,4 +62,13 @@ function changeMusic() {
   }
   song.src = songState[songIndex];
   songIndex++;
+}
+
+function toggleDarkMode() {
+  changeBackground();
+  changeHeader();
+  changeFooter();
+  changeBtn();
+  changeUnicorn();
+  changeMusic();
 }
